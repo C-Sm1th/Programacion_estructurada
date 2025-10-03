@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 });
 
 console.log("#4 - Calcular el piso de una habitación en un edificio");
-rl.question("Ingrese el número de la habitación: \n", (input) => {
+rl.question("Ingrese el número de la habitación: ", (input) => {
     const roomNumber = parseInt(input);
     const floor = Math.ceil(roomNumber / 10);
     console.log(`La habitación ${roomNumber} está en el piso ${floor}.`);
